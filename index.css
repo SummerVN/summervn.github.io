@@ -594,3 +594,10 @@ body {
       url("https://cdn.discordapp.com/attachments/844482853161271336/963767700205752390/shiina9.png") !important;
   }
 }
+
+img.osu
+{
+    max-width: 100%;
+    min-width: 300px;
+    height: auto;
+}
