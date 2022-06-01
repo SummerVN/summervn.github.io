@@ -184,6 +184,7 @@ body {
 
 #header {
   width: 100%;
+  max-width: 100%;
   margin-top: 8vh;
   text-align: center;
 }
@@ -193,6 +194,11 @@ body {
   text-decoration: none;
   font-family: "Questrial", sans-serif;
   font-weight: bold;
+}
+
+#header img {
+  max-width: 100%;
+  text-align: center;
 }
 
 #wysi {
@@ -291,6 +297,17 @@ body {
 
 #about span i {
   font-size: 16px;
+}
+
+#youtube {
+  margin: 2vh 0px;
+  padding: 4vh 0px !important;
+  text-align: center;
+}
+
+iframe {
+  width: 65vw;
+  height: calc(65vw/1.77777778);
 }
 
 #work {
@@ -468,10 +485,6 @@ body {
     max-width: 120px;
     max-height: 120px;
     margin: 0px auto !important;
-  }
-
-  #youtube {
-    margin: 0px;
   }
 
   #work {
