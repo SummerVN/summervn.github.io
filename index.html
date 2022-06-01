@@ -35,28 +35,6 @@
     <script src="cursor.js"></script>
 		<script type="module">var cursor = new osuCursor();</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script type="text/javascript">
-      var reqURL = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent("https://www.youtube.com/feeds/videos.xml?channel_id=");
-
-      function loadVideo(iframe) {
-        $.getJSON(reqURL + iframe.getAttribute('cid'),
-          function(data) {
-            var videoNumber = (iframe.getAttribute('vnum') ? Number(iframe.getAttribute('vnum')) : 0);
-            console.log(videoNumber);
-            var link = data.items[videoNumber].link;
-            var title=data.items[videoNumber].title;
-            id = link.substr(link.indexOf("=") + 1);
-            iframe.setAttribute("src", "https://youtube.com/embed/" + id + "?controls=0&autoplay=1");
-            iframe.parentElement.querySelector("#video-title").innerText = title;
-          }
-        );
-      }
-
-      var iframes = document.getElementsByClassName('latestVideoEmbed');
-      for (var i = 0, len = iframes.length; i < len; i++) {
-        loadVideo(iframes[i]);
-      }
-    </script>
     <div id="loading">
       <div id="spinner"></div>
     </div>
@@ -92,9 +70,30 @@
       
       <div id="youtube">
         <center><h1>Recent Video</h1></center>
-        <center><iframe class="latestVideoEmbed" vnum='0' cid="UC4G_Vf_usl4MHnyCTidbGmA" width="600" height="340" frameborder="0" allowfullscreen></iframe></center>
+        <center><iframe class="latestVideoEmbed" vnum='0' cid="UC4G_Vf_usl4MHnyCTidbGmA" width="800" height="450" frameborder="0" allowfullscreen></iframe></center>
       </div>
+      <script>
+        var reqURL = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent("https://www.youtube.com/feeds/videos.xml?channel_id=");
 
+function loadVideo(iframe) {
+  $.getJSON(reqURL + iframe.getAttribute('cid'),
+    function(data) {
+      var videoNumber = (iframe.getAttribute('vnum') ? Number(iframe.getAttribute('vnum')) : 0);
+      console.log(videoNumber);
+      var link = data.items[videoNumber].link;
+      var title=data.items[videoNumber].title;
+      id = link.substr(link.indexOf("=") + 1);
+      iframe.setAttribute("src", "https://youtube.com/embed/" + id + "?controls=0&autoplay=1");
+      iframe.parentElement.querySelector("#video-title").innerText = title;
+    }
+  );
+}
+
+var iframes = document.getElementsByClassName('latestVideoEmbed');
+for (var i = 0, len = iframes.length; i < len; i++) {
+  loadVideo(iframes[i]);
+}
+      </script>
       <div id="work">
         <center><h1>My repository</h1></center>
         <div class="projects" id="work_section">
