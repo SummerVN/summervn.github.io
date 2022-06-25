@@ -20,7 +20,7 @@
             "mainServer": true,
             "autoconnect": false,
             "modules": [{
-                "name": "quilt-loader-0.17.0",
+                "name": "quilt-loader-0.17.1.beta-2",
                 "id": "org.quiltmc:quilt-loader:0.17.0",
                 "artifact":{
                     "url": "https://maven.quiltmc.org/repository/release/org/quiltmc/quilt-loader/0.17.0/quilt-loader-0.17.0.jar"
@@ -134,7 +134,7 @@
                     {"name": "sodium", "id": "Axolotlclient-1.19:sodium:fabric-mc1.19-0.4.2%2Bbuild.16", "type": "Mod", "required": {"value": true, "def": true}, "artifact": {"url": "https://cdn-raw.modrinth.com/data/AANobbMI/versions/mc1.19-0.4.2/sodium-fabric-mc1.19-0.4.2%2Bbuild.16.jar", "size": 1364166, "MD5": "d9e7fd3500b22f44d5357ca76d2a7301", "path": "Axolotlclient-1.19/required/sodium-fabric-mc1.19-0.4.2%2Bbuild.16.jar"}},
                     {"name": "indium", "id": "Axolotlclient-1.19:indium:1.0.5%2Bmc1.19", "type": "Mod", "required": {"value": true, "def": true}, "artifact": {"url": "https://cdn-raw.modrinth.com/data/Orvt0mRa/versions/1.0.5+mc1.19/indium-1.0.5%2Bmc1.19.jar", "size": 118176, "MD5": "56517a4c7ba17a0e1145896ea5d94e79", "path": "Axolotlclient-1.19/required/indium-1.0.5%2Bmc1.19.jar"}},
                     {"name": "lithium", "id": "Axolotlclient-1.19:lithium:fabric-mc1.19-0.8.0", "type": "Mod", "required": {"value": true, "def": true}, "artifact": {"url": "https://cdn-raw.modrinth.com/data/gvQqBUqZ/versions/mc1.19-0.8.0/lithium-fabric-mc1.19-0.8.0.jar", "size": 475670, "MD5": "b5cebda4105074e622e7ca40756c8808", "path": "Axolotlclient-1.19/required/lithium-fabric-mc1.19-0.8.0.jar"}},
-                    {"name": "iris", "id": "Axolotlclient-1.19:iris:mc1.19-1.2.5", "type": "Mod", "required": {"value": true, "def": true}, "artifact": {"url": "https://cdn-raw.modrinth.com/data/YL57xq9U/versions/1.19.x-v1.2.5/iris-mc1.19-1.2.5.jar", "size": 1561033, "MD5": "a513a74952f1086aeb32913725f5eced", "path": "Axolotlclient-1.19/required/iris-mc1.19-1.2.5.jar"}},
+                    {"name": "iris", "id": "Axolotlclient-1.19:iris:mc1.19-1.2.5", "type": "Mod", "required": {"value": false, "def": true}, "artifact": {"url": "https://cdn-raw.modrinth.com/data/YL57xq9U/versions/1.19.x-v1.2.5/iris-mc1.19-1.2.5.jar", "size": 1561033, "MD5": "a513a74952f1086aeb32913725f5eced", "path": "Axolotlclient-1.19/optional/iris-mc1.19-1.2.5.jar"}},
 
                     {"name": "lazydfu", "id": "Axolotlclient-1.19:lazydfu:0.1.3", "type": "Mod", "required": {"value": true,"def": true}, "artifact": {"url": "https://cdn-raw.modrinth.com/data/hvFnDODi/versions/0.1.3/lazydfu-0.1.3.jar", "size": 14531, "MD5": "b412315ca555c1c43e7c028900f0bb01", "path": "Axolotlclient-1.19/required/lazydfu-0.1.3.jar"}},
                     {"name": "modmenu", "id": "Axolotlclient-1.19:modmenu:4.0.0", "type": "Mod", "required": {"value": true,"def": true}, "artifact": {"url": "https://cdn-raw.modrinth.com/data/mOgUt4GM/versions/4.0.0/modmenu-4.0.0.jar", "size": 303533, "MD5": "fd85b06f916ab023fe0de483c6b40b78", "path": "Axolotlclient-1.19/required/modmenu-4.0.0.jar"}},
@@ -152,6 +152,8 @@
                     {"name": "inspecio", "id": "Axolotlclient-1.19:inspecio:1.4.2%2B1.19", "type": "Mod", "required": {"value": false, "def": false}, "artifact": {"url": "https://cdn-raw.modrinth.com/data/a93H3mKU/versions/1.4.2+1.19/inspecio-1.4.2%2B1.19.jar", "size": 315199, "MD5": "8a971b0318a197937aaa4ad3bfeb7cf1", "path": "Axolotlclient-1.19/optional/inspecio-1.4.2%2B1.19.jar"}},
                     {"name": "bobby", "id": "Axolotlclient-1.19:bobby:4.0.0", "type": "Mod", "required": {"value": false, "def": false}, "artifact": {"url": "https://cdn-raw.modrinth.com/data/M08ruV16/versions/4.0.0/bobby-4.0.0.jar", "size": 776264, "MD5": "8bd7f1a92f72b8cf85ee198c6da58ae9", "path": "Axolotlclient-1.19/optional/bobby-4.0.0.jar"}},
                     {"name": "entity", "id": "Axolotlclient-1.19:entity:texture-features-3.1.2-mc1.19", "type": "Mod", "required": {"value": false, "def": true}, "artifact": {"url": "https://cdn-raw.modrinth.com/data/BVzZfTc1/versions/3.1.2/entity-texture-features-3.1.2-mc1.19.jar", "size": 1169555, "MD5": "c6e9d19562d9bf78dcc3941484fd6d69", "path": "Axolotlclient-1.19/optional/entity-texture-features-3.1.2-mc1.19.jar"}},
+
+                    {"name": "Cosmetica%201.19%201.1.1.jar", "id": "Axolotlclient-1.19:Cosmetica%201.19%201.1.1.jar:", "type": "Mod", "required": {"value": false, "def": true}, "artifact": {"url": "https://cdn-raw.modrinth.com/data/s9hF9QGp/versions/1.1.1-1.19/Cosmetica%201.19%201.1.1.jar", "size": 430203, "MD5": "b9b10269dfc60e522fe7bfcfb2904b2c", "path": "Axolotlclient-1.19/optional/Cosmetica%201.19%201.1.1.jar"}},
 
 
                     {"id": "config", "type": "File", "artifact": {"url": "https://github.com/moehreag/AxolotlClient-files/raw/master/servers.dat","path":"../../minecraft/servers.dat"}},
