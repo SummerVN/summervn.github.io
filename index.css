@@ -584,13 +584,13 @@ iframe {
       rgba(10, 10, 10, 0.3),
       rgb(10, 10, 10, 1)
     ),
-    url("https://cdn.discordapp.com/attachments/844482853161271336/974564281842556948/manun2-2x_3.png");
+    url("https://cdn.discordapp.com/attachments/844482853161271336/995654534602952764/potofu1.png");
   --background-background: linear-gradient(
       0deg,
       rgba(10, 10, 10, 1),
       rgba(10, 10, 10, 0.6)
     ),
-    url("https://cdn.discordapp.com/attachments/844482853161271336/974564281842556948/manun2-2x_3.png") center center fixed;
+    url("https://cdn.discordapp.com/attachments/844482853161271336/995654534602952764/potofu1.png") center center fixed;
   --height: 50vh;
 }
 
@@ -621,7 +621,7 @@ iframe {
         rgba(10, 10, 10, 1),
         rgba(10, 10, 10, 0)
       ),
-      url("https://cdn.discordapp.com/attachments/844482853161271336/974564281842556948/manun2-2x_3.png") !important;
+      url("https://cdn.discordapp.com/attachments/844482853161271336/995654534602952764/potofu1.png") !important;
   }
 }
 
