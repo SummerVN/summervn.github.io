@@ -584,13 +584,13 @@ iframe {
       rgba(10, 10, 10, 0.3),
       rgb(10, 10, 10, 1)
     ),
-    url("https://cdn.discordapp.com/attachments/844482853161271336/1003204221119766538/autumnvn_2.jpg");
+    url("https://cdn.discordapp.com/attachments/844482853161271336/1019318131006640281/chino_web_bg.jpg");
   --background-background: linear-gradient(
       0deg,
       rgba(10, 10, 10, 1),
       rgba(10, 10, 10, 0.6)
     ),
-    url("https://cdn.discordapp.com/attachments/844482853161271336/1003204221119766538/autumnvn_2.jpg") center center fixed;
+    url("https://cdn.discordapp.com/attachments/844482853161271336/1019318131006640281/chino_web_bg.jpg") center center fixed;
   --height: 50vh;
 }
 
@@ -621,7 +621,7 @@ iframe {
         rgba(10, 10, 10, 1),
         rgba(10, 10, 10, 0)
       ),
-      url("https://cdn.discordapp.com/attachments/844482853161271336/1003204221119766538/autumnvn_2.jpg") !important;
+      url("https://cdn.discordapp.com/attachments/844482853161271336/1019318131006640281/chino_web_bg.jpg") !important;
   }
 }
 
