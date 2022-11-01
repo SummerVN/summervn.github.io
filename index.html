@@ -34,16 +34,16 @@
 </head>
 
 <body>
-  <script>function playAudio(audio_element) {
+  <!--script>function playAudio(audio_element) {
       var x = document.getElementById(audio_element);
       x.play();
-    }</script>
+    }</script-->
   <script src="cursor.js"></script>
   <script type="module">var cursor = new osuCursor();</script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <div id="loading">
+  <!--div id="loading">
     <div id="spinner"></div>
-  </div>
+  </div-->
   <div id="profile">
     <div id="profile_img" style="background: url(https://avatars.githubusercontent.com/u/77253698?v=4) center;"></div>
     <div id="username"><span style="display:block;">Đỗ Văn Hoài Tuân</span><a
@@ -70,15 +70,18 @@
   
   <div id="display">
     <div id="header">
-      <a href="https://autumnvn.me/727"><img src="https://discord.c99.nl/widget/theme-2/393694671383166998.png" /></a>
+      <a href="https://autumnvn.me"><img class="svg" src="autumnvn.svg" /></a>
     </div>
-    <div id="wysi">
+    <!--div id="wysi">
       <audio id="WYSI727" src="wysi.ogg"></audio><button class="btn 727" onclick="playAudio('WYSI727')"
         type="button">727</button>
-    </div>
+    </div-->
     <div id="header">
       <a href="https://osu.ppy.sh/users/AutumnVN"><img class="osu"
-          src="https://osu-stats-signature.vercel.app/card?user=AutumnVN&mode=std&lang=en&animation=true" /></a>
+          src="https://osu-stats-signature.vercel.app/card?user=AutumnVN&mode=std&lang=en&animation=true" width="395"/></a>
+    </div>
+    <div id="header">
+      <a href="https://autumnvn.me/727"><img class= "discord" src="https://discord.c99.nl/widget/theme-2/393694671383166998.png" /></a>
     </div>
 
     <div id="youtube">
@@ -138,19 +141,6 @@
             </div>
           </section>
         </a>
-        <a href="https://github.com/AutumnVN/DiscordRPC" target="_blank">
-          <section>
-            <div class="section_title">DiscordRPC</div>
-            <div class="about_section">
-              <span style="display:block;">Create custom Rich Presence for any applications/games don't have RPC without modifying them.</span>
-            </div>
-            <div class="bottom_section">
-              <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
-              <span><i class="fas fa-star"></i>&nbsp; 0</span>
-              <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-            </div>
-          </section>
-        </a>
         <a href="https://github.com/AutumnVN/AutumnVN" target="_blank">
           <section>
             <div class="section_title">AutumnVN</div>
@@ -160,7 +150,7 @@
             <div class="bottom_section">
               <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
               <span><i class="fas fa-star"></i>&nbsp; 0</span>
-              <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
+              <span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
             </div>
           </section>
         </a>
@@ -171,7 +161,20 @@
               <span style="display:none;">undefined</span>
             </div>
             <div class="bottom_section">
-              <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; CSS</span>
+              <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; HTML</span>
+              <span><i class="fas fa-star"></i>&nbsp; 1</span>
+              <span><i class="fas fa-code-branch"></i>&nbsp; 1</span>
+            </div>
+          </section>
+        </a>
+        <a href="https://github.com/AutumnVN/DiscordRPC" target="_blank">
+          <section>
+            <div class="section_title">DiscordRPC</div>
+            <div class="about_section">
+              <span style="display:block;">Create custom Rich Presence for any applications/games don't have RPC without modifying them.</span>
+            </div>
+            <div class="bottom_section">
+              <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Python</span>
               <span><i class="fas fa-star"></i>&nbsp; 0</span>
               <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
             </div>

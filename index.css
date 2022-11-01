@@ -12,7 +12,7 @@ body {
   align-items: center;
   font-family: "Poppins", sans-serif;
 }
-
+/*
 #loading {
   width: 100vw;
   height: 100vh;
@@ -37,7 +37,7 @@ body {
   border-bottom: 2px solid var(--text-color);
   border-radius: 50%;
   margin: 0;
-}
+}*/
 
 @keyframes rotate {
   0% {
@@ -66,7 +66,7 @@ body {
 
 #display {
   width: 64vw;
-  padding: 4vh 3vw;
+  padding: 0vh 3vw;
   height: 92vh;
   display: inline-block;
   padding-left: 33vw;
@@ -185,7 +185,6 @@ body {
 #header {
   width: 100%;
   max-width: 100%;
-  margin-top: 8vh;
   text-align: center;
 }
 
@@ -230,7 +229,7 @@ body {
 
 #footer {
   width: 100%;
-  padding: 8vh 0px;
+  padding: 2vh 0px;
   text-align: center;
 }
 
@@ -300,8 +299,7 @@ body {
 }
 
 #youtube {
-  margin: 2vh 0px;
-  padding: 4vh 0px !important;
+  padding: 2hv 0px;
   text-align: center;
 }
 
@@ -625,13 +623,18 @@ iframe {
   }
 }
 
-img.osu
+img.osu, img.discord
 {
-    max-width: 100%;
-    min-width: 300px;
+    text-align: center;
+    min-width: min(550px, 92vw);
     height: auto;
 }
 
+img.svg {
+  max-height: 250px;
+  width: auto;
+}
+/*
 .btn {
   border: none;
   background-color: inherit;
@@ -643,5 +646,4 @@ img.osu
   display: inline-block;
 }
 
-/* On mouse-over */
-.btn:hover {background: rgba(238, 238, 238, 0.05);}
+.btn:hover {background: rgba(238, 238, 238, 0.05);} */
