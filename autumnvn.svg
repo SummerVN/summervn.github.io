@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-60 -60 870 240">
+    <defs>
+        <style>
+            @keyframes dash {
+                0% {
+                    stroke-dashoffset: calc(var(--len) + 1px);
+                }
+                100% {
+                    stroke-dashoffset: 0;
+                }
+            }
+            @keyframes stroke-width {
+                0% {
+                    stroke-width: 3px;
+                }
+                100% {
+                    stroke-width: 10px;
+                }
+            }
+            @keyframes fade {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+            @keyframes dot {
+                0% {
+                    r: 0px;
+                }
+                100% {
+                    r: var(--r);
+                }
+            }
+            @keyframes glow {
+                0% {
+                    filter: drop-shadow(0 0 2px rgba(255, 255, 255, 0.4)) drop-shadow(0 0 4px var(--color)) drop-shadow(0 0 26px var(--color));
+                }
+                100% {
+                    filter: drop-shadow(0 0 1.8px rgba(255, 255, 255, 0.4)) drop-shadow(0 0 3.6px var(--color)) drop-shadow(0 0 23.5px var(--color));
+                }
+            }
+            @keyframes flicker {
+                0%, 18%, 22%, 25%, 53%, 57%, 100% {
+                    opacity: 1;
+                }
+                20%, 24%, 55% {
+                    opacity: 0.87;
+                }
+            }
+            :root {
+                --red: #f96a9c;
+                --pink: #ff96ef;
+                --blue: #7e8af3;
+                --neon-animation: glow 0.11s ease-in-out 0s infinite alternate,
+                flicker 2s infinite 2.8s alternate;
+            }
+            .stroke {
+                fill: none;
+                stroke: var(--color);
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 3px;
+                
+                stroke-dasharray: calc(var(--len) + 1px);
+                stroke-dashoffset: calc(var(--len) + 1px);
+                animation: dash 1s cubic-bezier(0.8, 0, 0.2, 1) var(--delay) forwards,
+                    stroke-width 1s cubic-bezier(0.8, 0, 0.2, 1) calc(var(--delay) + 0.5s) forwards,
+                    fade 0.2s linear calc(var(--delay) + 0s) forwards,
+                    var(--neon-animation);
+            }
+            
+            .stroke {
+                --color: var(--pink);
+            }
+            .stroke.blue {
+                --color: var(--blue);
+            }
+            .stroke.red {
+                --color: var(--red);
+            }
+        </style>
+    </defs>
+    <g id="text">
+        <path class="stroke blue" style="--len: 727px; --delay: 0.5s;" d="M 3.3 105 L 42.3 3 L 81 105 M 17 69 L 67 69"/>
+        <path class="stroke" style="--len: 727px; --delay: 0.65s;" d="M 105.3 30 L 105.3 73.35 A 52.842 52.842 0 0 0 105.888 81.513 Q 106.563 85.82 108.012 89.265 A 22.413 22.413 0 0 0 111.975 95.625 A 21.691 21.691 0 0 0 123.647 102.288 A 33.033 33.033 0 0 0 130.95 103.05 A 31.784 31.784 0 0 0 139.764 101.89 A 23.861 23.861 0 0 0 151.125 94.8 Q 156.511 88.816 157.99 78.018 A 65.506 65.506 0 0 0 158.55 69.15 L 158.55 30"/>
+        <path class="stroke" style="--len: 727px; --delay: 0.8s;" d="M 195.9 9 L 195.9 84.9 A 18.669 18.669 0 0 0 196.667 90.353 A 15.532 15.532 0 0 0 199.275 95.4 Q 202.65 99.75 207.975 101.55 Q 212.96 103.235 218.404 102.028 A 23.303 23.303 0 0 0 219.15 101.85 M 180.3 30 L 215 30"/>
+        <path class="stroke" style="--len: 727px; --delay: 0.95s;" d="M 239.85 30 L 239.85 73.35 A 52.842 52.842 0 0 0 240.438 81.513 Q 241.113 85.82 242.562 89.265 A 22.413 22.413 0 0 0 246.525 95.625 A 21.691 21.691 0 0 0 258.197 102.288 A 33.033 33.033 0 0 0 265.5 103.05 A 31.784 31.784 0 0 0 274.314 101.89 A 23.861 23.861 0 0 0 285.675 94.8 Q 291.061 88.816 292.54 78.018 A 65.506 65.506 0 0 0 293.1 69.15 L 293.1 30"/>
+        <path class="stroke blue" style="--len: 727px; --delay: 1.15s;" d="M 322.05 30 L 322.05 105 L 322.05 67.5 A 68.213 71.513 0 0 1 322.56 58.681 Q 323.947 47.549 329.1 41.025 Q 336.15 32.1 348.3 32.1 A 27.125 30.425 0 0 1 352.833 32.425 A 20.73 20.73 0 0 1 366.375 39.975 Q 372.75 47.85 372.75 62.7 L 372.75 105 L 372.75 67.5 A 63.567 70.167 0 0 1 373.215 59.174 Q 373.814 54.176 375.182 50.091 A 21.913 28.513 0 0 1 380.025 41.025 A 16.855 23.455 20 0 1 389.782 33.778 A 19.453 26.053 -80 0 1 399.3 32.1 A 24.146 30.746 0 0 1 402.789 32.292 A 14.972 21.572 -40 0 1 417.45 39.975 A 17.605 24.205 0 0 1 421.042 45.829 Q 422.658 49.506 423.405 54.1 A 47.029 53.629 0 0 1 424.05 62.7 L 424.05 105"/>
+        <path class="stroke blue" style="--len: 727px; --delay: 1.3s;" d="M 458.25 30 L 458.25 105 L 458.25 66.6 A 63.575 66.875 0 0 1 458.717 58.459 Q 460.121 47.029 465.75 40.5 A 20.724 24.024 0 0 1 476.619 33.181 A 26.174 29.474 0 0 1 485.85 31.8 Q 497.85 31.8 504.75 39.75 Q 509.44 45.154 510.942 53.745 A 47.904 51.204 0 0 1 511.65 62.55 L 511.65 105"/>
+        <path class="stroke red" style="--len: 727px; --delay: 1.45s;" d="M 528.45 0 L 570.45 105 L 609 0"/>
+        <path class="stroke red" style="--len: 727px; --delay: 1.7s;" d="M 631.5 105 L 631.5 0 L 705.15 105 L 705.15 0"/>
+    </g>
+</svg>
