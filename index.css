@@ -582,13 +582,13 @@ iframe {
       rgba(10, 10, 10, 0.3),
       rgb(10, 10, 10, 1)
     ),
-    url("https://cdn.discordapp.com/attachments/844482853161271336/1042841411688595516/cupofchino2.jpg");
+    url("https://media.discordapp.net/attachments/844482853161271336/1060456665272549497/b3565273da13f8af965f576ca90b7d86.jpg");
   --background-background: linear-gradient(
       0deg,
       rgba(10, 10, 10, 1),
       rgba(10, 10, 10, 0.6)
     ),
-    url("https://cdn.discordapp.com/attachments/844482853161271336/1042841411688595516/cupofchino2.jpg") center center fixed;
+    url("https://media.discordapp.net/attachments/844482853161271336/1060456665272549497/b3565273da13f8af965f576ca90b7d86.jpg") center center fixed;
   --height: 50vh;
 }
 
@@ -619,7 +619,7 @@ iframe {
         rgba(10, 10, 10, 1),
         rgba(10, 10, 10, 0)
       ),
-      url("https://cdn.discordapp.com/attachments/844482853161271336/1042841411688595516/cupofchino2.jpg") !important;
+      url("https://media.discordapp.net/attachments/844482853161271336/1060456665272549497/b3565273da13f8af965f576ca90b7d86.jpg") !important;
   }
 }
 
